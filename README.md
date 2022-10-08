@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/mobile-first-approach-using-plain-css-only-pyrHnBstB2)
-- Live Site URL: [GitHub Pages](https://donchriscorleone.github.io/product-preview-card-component-solution2/index.html)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/mobile-first-workflow-using-plain-css-7MZzCXDiSF)
+- Live Site URL: [GitHub Pages](https://donchriscorleone.github.io/stats-preview-card-component/)
 
 ## My process
 
