@@ -69,9 +69,12 @@ main {
 
 .card .card-picture-container {
   position: relative;
+  background-color: var(--accent);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.card .card-picture-container::after {
+/* .card .card-picture-container::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -80,14 +83,14 @@ main {
   position: absolute;
   top: 0;
   opacity: .75;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
+} */
 
 .card .card-picture-container img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 80%;
 }
 
 .card-content {
