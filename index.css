@@ -24,3 +24,222 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  height: 100vh;
+  background-color: var(--main-bg);
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+h1, h2, h3, p, span {
+  color: var(--main-heading);
+}
+
+.main-header {
+  font-family: var(--font-inter);
+  font-weight: 700;
+}
+
+.main-p {
+  font-family: var(--font-lexend);
+  color: var(--main-paragraph);
+}
+
+.feature-description {
+  color: var(--stat-heading);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  max-width: 290px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: var(--card-bg);
+}
+
+.card .card-picture-container {
+  position: relative;
+}
+
+.card .card-picture-container::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  display: block;
+  position: absolute;
+  top: 0;
+  opacity: .75;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card .card-picture-container img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+.card-content {
+  margin-top: 10px;
+  padding: 15px 25px 25px;
+}
+
+.card-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.card-header .card-title {
+  font-size: 2rem;
+}
+
+.card-header .card-title em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.card-header .card-description {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.card-features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.card-feature {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  text-align: center;
+}
+
+.card-feature .card-feature-header {
+  font-size: 1.8rem;
+}
+
+.card-feature .card-feature-description {
+  text-transform: uppercase;
+  font-family: var(--font-lexend);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+  }
+
+  .card-picture-container {
+    grid-column: 2 / 3;
+  }
+
+  .card-content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 50px 40px;
+    margin-top: initial;
+  }
+
+  .card-header {
+    text-align: left;
+    row-gap: 25px;
+  }
+  
+  .card-header .card-title {
+    font-size: 3rem;
+  }
+
+  .card-header .card-description {
+    font-size: 1.55rem;
+  }
+
+  .card-features {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 65px;
+    max-width: 80%;
+  }
+  
+  .card-feature {
+    row-gap: 8px;
+    text-align: left;
+  }
+  
+  .card-feature .card-feature-header {
+    font-size: 1.95rem;
+  }
+  
+  .card-feature .card-feature-description {
+    font-size: 1.2rem;
+  }
+}
+
+/* Attribution */
+
+/* Attribution */
+
+.attribution {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #ddd;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.attribution a:hover, .attribution a:active {
+  color: #ccc;
+  transition: color .4s;
+}
+
+.attribution .my-links {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.attribution .my-links .my-name {
+  text-decoration: none;
+}
+
+.attribution .links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .attribution {
+    top: 30px;
+    bottom: initial;
+  }
+}
